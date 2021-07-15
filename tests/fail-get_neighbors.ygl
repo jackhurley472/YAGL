@@ -1,0 +1,20 @@
+Node n("James");
+Node n2("Tank");
+Node n3("Adam");
+Node n4("Jack");
+
+Graph g;
+g: +n + n2 <-> n + n3 + n4 <-> n3 <-> n;
+
+print_neighbors(g, n);
+
+void print_neighbors(Graph g, Node n) {
+
+	int num = g.num_neighbors[n];
+	int pos = 0;
+	while (pos < num) {
+		print(g.neighbor[n,n]);
+		pos = pos + 1;
+	}
+
+}

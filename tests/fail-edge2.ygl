@@ -1,0 +1,7 @@
+Graph G;
+Node n1("origin");
+Node n2("destination");
+G + n1;
+G + n2;
+n1: G -> n2; /* should be G: n1 -> n2 */
+printGraph(G);

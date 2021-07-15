@@ -1,0 +1,18 @@
+/* Every single variable is named foo */
+
+String foo = "wins";
+{
+   String foo = "always";
+   {
+      bool foo = true;
+      { 
+         if(foo) {
+            int foo = 42;
+            printInt(foo);
+         }
+      }
+   }
+   printInt(foo); /* Try to print inner foo which is an int but out of scope */
+  
+}
+printString(foo);

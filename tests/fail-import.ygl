@@ -1,0 +1,22 @@
+/* FORGET Preprocessing directives */
+
+/* Social Media Application */
+
+Graph fb;        /* Facebook  */
+
+/* People */
+Node adam("Adam");
+Node james("Jamie");                                                         /* Typo on purpose for demonstration later */
+Node jack("Jack");
+Node tank("Shvetank");
+
+
+/* Add people to Facebook's network */
+fb: + adam + james + jack + tank;
+
+/* Add edges between people to make them friends */
+fb: adam <-> james <-> jack, tank <-> jack, tank <-> adam;                   /* Facebook friends is a bidirectional relationship */
+
+/* Find friends of friends */
+dfs(fb, james, 2);           /* Should FAIL to find dfs bc import of library forgotten */
+print(fb);

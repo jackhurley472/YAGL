@@ -1,0 +1,3 @@
+Node n("n");
+bool x = n.curr_dist; /* x should be an int */
+printBool(x);

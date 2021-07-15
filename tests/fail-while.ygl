@@ -1,0 +1,5 @@
+int a;
+a = 2;
+while (a) { /* should be boolean not int */
+	printInt(a);
+}

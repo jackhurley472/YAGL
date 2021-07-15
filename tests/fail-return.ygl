@@ -1,0 +1,4 @@
+String sreturned(int x) {
+	printInt(x);
+	return 0;
+}

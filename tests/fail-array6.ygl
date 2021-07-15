@@ -1,0 +1,2 @@
+bool[5] a;
+a[-1] = true; /* Index out of bounds */

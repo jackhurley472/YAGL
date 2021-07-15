@@ -1,0 +1,18 @@
+Graph team;
+
+Node adam("Adam");
+Node james("James");
+Node tank("Tank");
+Node jack("Jack");
+
+team + adam;
+team + james;
+team + tank;
+team + jack;
+
+String s_james = "james";
+team: adam -> s_james -> tank -> jack -> adam;
+
+printGraph(team);
+
+

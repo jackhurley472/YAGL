@@ -1,0 +1,16 @@
+int a;
+
+int printHello{int a) {
+  printString("Hello World!");
+  printInt(a);
+}
+
+int printHello2() {
+  int a;
+
+  printInt(7);
+  printHello(5);
+}
+
+
+printHello2();

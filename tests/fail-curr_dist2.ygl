@@ -1,0 +1,3 @@
+Node n("n");
+int x = n.curr_dist + 5.5; /* can only add ints */
+printInt(x);

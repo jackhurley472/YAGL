@@ -1,0 +1,2 @@
+if (2)
+	printInt(2); /* should be boolean not int */

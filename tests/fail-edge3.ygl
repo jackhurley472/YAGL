@@ -1,0 +1,19 @@
+Graph team;
+
+Node adam("Adam");
+Node james("James");
+Node tank("Tank");
+Node jack("Jack");
+
+team + adam;
+team + james;
+team + tank;
+team + jack;
+
+int x;
+x= 5;
+x: adam -> james -> tank -> jack -> adam;
+
+printGraph(team);
+
+

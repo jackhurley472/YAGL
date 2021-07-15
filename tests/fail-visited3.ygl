@@ -1,0 +1,2 @@
+Node n("n");
+n.visited = 5; /* should be bool not int */

@@ -1,0 +1,14 @@
+int test(int q) {
+int x = 5;
+int y;
+y = 10;
+int z = x * 2 + y;
+printInt(z + q);
+}
+
+test(1);
+test(5);
+test(10);
+
+int qqq = "hi";
+

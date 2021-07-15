@@ -1,0 +1,2 @@
+bool[5] a;
+a[0] = "String"; /* Invalid type assigned */

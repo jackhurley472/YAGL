@@ -1,0 +1,2 @@
+bool[5] a;
+a[true]; /* Can not index with non Int type */

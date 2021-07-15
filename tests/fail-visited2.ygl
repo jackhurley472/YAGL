@@ -1,0 +1,2 @@
+Graph g;
+g.visited; /*should be node not graph */

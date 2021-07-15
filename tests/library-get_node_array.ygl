@@ -1,0 +1,17 @@
+Node n1("Tank");
+Graph g;
+g: + n1;
+Node[1000] n;
+n = get_node_array(g);
+print(n[0]);
+
+Node[1000] get_node_array(Graph g) {
+	Node[1000] nn;
+	int size = g.num_nodes;
+	int curr = 0;
+	while (curr < size) {
+		nn[curr] = g.node[curr];
+		curr = curr + 1;
+	}
+	return nn;
+}

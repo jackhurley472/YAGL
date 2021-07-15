@@ -1,0 +1,43 @@
+void reset(Graph g) {
+    int size = g.num_nodes;
+    int curr = 0;
+
+    while (curr < size) {
+      Node current;
+      current = g.node[curr];
+      current.visited = false;
+      current.curr_dist = 0;
+      curr = curr + 1;
+    }
+}
+
+Graph reverse_graph_lib(Graph g) {
+
+	Graph g2;
+
+	int nodes = g.num_nodes;
+	int curr = 0;
+	while (curr < nodes) {
+		Node current = g.node[curr];
+		g2: + current;
+		curr = curr + 1;
+	}
+	
+	curr = 0;
+	while (curr < nodes) {
+
+		Node current = g.node[curr];
+		int neighs = g.num_neighbors[current];
+		int on = 0;
+		while (on < neighs) {
+			Node to;
+			to  = g.neighbor[current, on];
+			int val = g.weight[current, to];
+			g2: to ->val current; /* Reversed */
+			on = on + 1;
+		} 
+
+		curr = curr + 1;
+	}
+	return g2;
+}

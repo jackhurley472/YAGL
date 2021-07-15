@@ -1,0 +1,11 @@
+int main2() {
+printString("Hello World!");
+printInt(0);
+}
+main2();
+
+int main2() {
+printString("Hello World!");
+printInt(0);
+}
+

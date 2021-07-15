@@ -1,0 +1,1 @@
+Fatal error: exception Failure("illegal graph operator: int x. Was expecting type Graph")
