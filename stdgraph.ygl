@@ -1,0 +1,99 @@
+/* YAGL's standard graph */
+Graph copy_graph_lib(Graph g) {
+
+	Graph g2;
+
+	int nodes = g.num_nodes;
+	int curr = 0;
+	while (curr < nodes) {
+		Node current = g.node[curr];
+		g2: + current;
+		curr = curr + 1;
+	}
+	
+	curr = 0;
+	while (curr < nodes) {
+
+		Node current = g.node[curr];
+		int neighs = g.num_neighbors[current];
+		int on = 0;
+		while (on < neighs) {
+			Node to;
+			to  = g.neighbor[current, on];
+			int val = g.weight[current, to];
+			g2: current ->val to;
+			on = on + 1;
+		} 
+
+		curr = curr + 1;
+	}
+
+	return g2;
+
+}
+
+Graph reverse_graph_lib(Graph g) {
+
+	Graph g2;
+
+	int nodes = g.num_nodes;
+	int curr = 0;
+	while (curr < nodes) {
+		Node current = g.node[curr];
+		g2: + current;
+		curr = curr + 1;
+	}
+	
+	curr = 0;
+	while (curr < nodes) {
+
+		Node current = g.node[curr];
+		int neighs = g.num_neighbors[current];
+		int on = 0;
+		while (on < neighs) {
+			Node to;
+			to  = g.neighbor[current, on];
+			int val = g.weight[current, to];
+			g2: to ->val current; /* Reversed */
+			on = on + 1;
+		} 
+
+		curr = curr + 1;
+	}
+	return g2;
+}
+
+void print_graph_lib(Graph g) {
+	int nodes = g.num_nodes;
+	int curr = 0;
+	String nodes_s = "Nodes: ";
+	String edges = "Edges: ";
+	while (curr < nodes) {
+		Node current = g.node[curr];
+		nodes_s = nodes_s + current.name + " ";
+		curr = curr + 1;
+		int neighs = g.num_neighbors[current];
+		int on = 0;
+		while (on < neighs) {
+			Node ne = g.neighbor[current, on];
+			String edge = current.name + " -> ";
+			edges = edges + edge + ne.name;
+			edges = edges + ", ";
+			on = on + 1;
+		}
+	}
+	print(nodes_s);
+	print(edges);
+}
+
+
+Node[1000] get_node_array(Graph g) {
+	Node[1000] nn;
+	int size = g.num_nodes;
+	int curr = 0;
+	while (curr < size) {
+		nn[curr] = g.node[curr];
+		curr = curr + 1;
+	}
+	return nn;
+}

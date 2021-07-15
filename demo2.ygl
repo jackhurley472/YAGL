@@ -1,0 +1,45 @@
+import stdgraph.ygl
+import stdalgo.ygl
+
+Graph hello; /* declare graph */
+
+String hello_world = ""; /* declare string holder */
+
+/* declare nodes */
+Node break("");
+Node h("h");
+Node e("e");
+Node l("l");
+Node l2("l");
+Node o("o");
+Node space(" ");
+Node w("w");
+Node o2("o");
+Node r("r");
+Node l3("l");
+Node d("d");
+Node excl("!");
+
+/* populate graph */
+hello: + h + e + l + l2 + o + space + w + o2 + r + l3 + d + excl,
+	 h -> e -> l -> l2 -> o -> space -> w -> o2 -> r -> l3 -> d -> excl;
+
+/* Generate array of nodes based on depth */
+int num_nodes = hello.num_nodes;
+Node[11] nodes;
+int on = 0;
+while (on < num_nodes + 1) {
+	nodes[on] = get_first_node_at_depth(hello, h, break, on);
+   	on = on + 1;
+}
+
+/* Populate hello_world string from nodes */
+on = 0;
+while (on < num_nodes ) {
+	Node curr = nodes[on];
+	hello_world = hello_world + curr.name;
+        on = on + 1;
+}
+
+/* Done! Hello world! */
+print(hello_world);

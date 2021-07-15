@@ -1,0 +1,98 @@
+void reset(Graph g) {
+    int size = g.num_nodes;
+    int curr = 0;
+
+    while (curr < size) {
+      Node current;
+      current = g.node[curr];
+      current.visited = false;
+      current.curr_dist = 0;
+      curr = curr + 1;
+    }
+}
+
+
+/* YAGL's Standard Graph Library */
+void dfs_helper(Graph g, Node vertex, int depth){
+   if (vertex.visited == true) {
+       return;
+   }
+   if (vertex.curr_dist > depth) {
+       return;
+   }
+   vertex.visited = true;
+
+   /* Do whatever you want to the vertex */
+   if (vertex.curr_dist == 0) {
+   } else {
+   	print(vertex);
+   }
+
+   int size = g.num_neighbors[vertex];
+   int curr = 0;
+
+   while (curr < size) {
+      Node current;
+      current = g.neighbor[vertex, curr];
+      if (current.curr_dist == 0) {
+          current.curr_dist = vertex.curr_dist + 1;
+      }
+      curr = curr + 1;
+   }
+   curr = 0;
+   while (curr < size) {
+      Node current;
+      current = g.neighbor[vertex, curr];
+      /*print(g.weight[current, vertex]);*/
+      dfs_helper(g, current, depth);
+      curr = curr + 1;
+   }
+}
+
+void dfs(Graph g, Node vertex, int depth) {
+	reset(g);
+	dfs_helper(g, vertex, depth);
+}
+
+
+Node get_first_node_at_depth(Graph g, Node vertex, Node b, int depth) {
+	reset(g);
+	return get_first_node_at_depth_helper(g, vertex, b, depth);
+}
+
+Node get_first_node_at_depth_helper(Graph g, Node vertex, Node break, int depth){
+   if (vertex.visited == true) {
+       return break;
+   }
+
+   if (depth == vertex.curr_dist) {
+       return vertex;
+   }
+   vertex.visited = true;
+
+   int size = g.num_neighbors[vertex];
+   int curr = 0;
+
+   while (curr < size) {
+      Node current;
+      current = g.neighbor[vertex, curr];
+      if (current.curr_dist == 0) {
+          current.curr_dist = vertex.curr_dist + 1;
+      }
+      curr = curr + 1;
+   }
+   curr = 0;
+   Node new; /* just a place holder */
+   while (curr < size) {
+      Node current;
+      current = g.neighbor[vertex, curr];
+      new = get_first_node_at_depth_helper(g, current, break, depth);
+      if (new == break) {
+      } else {
+        return new;
+      }
+      curr = curr + 1;
+   }
+   return new;
+}
+

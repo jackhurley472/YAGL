@@ -1,0 +1,19 @@
+import stdgraph.ygl
+
+Graph example;
+Node n(gen_name("1"));
+Node n2(gen_name("2"));
+
+example: + n + n2, n -> n2 -> n;
+
+print_graph_lib(example);
+
+String gen_name(String n) {
+	String hidden = "ODE";
+	String total = "";
+	{
+		String hidden = "N";
+		total = total + hidden;
+	}
+	return total + hidden + n;
+}

@@ -1,0 +1,80 @@
+import stdalgo.ygl
+import stdgraph.ygl
+
+/* Social Media Application */
+
+Graph fb;        /* Facebook  */
+Graph tw;        /* Twitter   */
+Graph ln;        /* LinkedIn  */
+
+/* People */
+Node adam("Adam");
+Node james("Jamie");                                                         /* Typo on purpose for demonstration later */
+Node jack("Jack");
+Node tank("Shvetank");
+Node edwards("Edwards");
+Node tiffany("Tiffany");
+Node buehler("Buehler");
+Node michael1("Michael1");
+Node michael2("Michael2");
+
+
+
+
+/* Add people to Facebook's network */
+fb: + adam + james + jack + tank;
+
+/* Add edges between people to make them friends */
+fb: adam <-> james <-> jack, tank <-> jack, tank <-> adam;                   /* Facebook friends is a bidirectional relationship */
+
+printString("Facebook's Network");
+printGraph(fb);
+print_break();
+
+
+
+
+/* Add people to Twitter's network and edges between them to add follwers */
+tw: + edwards + michael1 -> edwards,     /* Twitter followers is a one directional relationship (not required to follow back) */ 
+    + michael2 + tank <- edwards;        /* Nodes can be in multiple graphs */   
+
+printString("Twitter's Network");
+printGraph(tw);
+print_break();
+
+
+
+/* Add people to LinkedIn's graphs and edges between people to make connections, LinkedIn connections are bidirectional */
+ln: + tiffany + buehler + james + edwards + michael1 + michael2 + adam + tank <-> james <-> adam <-> edwards <-> michael1 <-> michael2 <-> tiffany <-> edwards,
+    + jack, buehler <-> james <-> jack;
+
+printString("LinkedIn's Network");
+printGraph(ln);
+
+/* Delete the random people from LinkedIn since they chose to delete their accounts */
+ln: - tiffany - buehler - michael2 - michael1;
+
+printString("LinkedIn's Network - with deletion");
+printGraph(ln);
+print_break();
+
+/* Update typo! fixes in all graphs */
+james = "James";
+printString("LinkedIn's Network with James fixed");
+printGraph(ln);
+print_break();
+
+print("Friends and Friends of Friends of James");
+/* Find friends of friends */
+dfs(fb, james, 2);           /* Should find tank */
+print('\n');
+print("Facebook's Network, for reference:");
+print(fb);
+
+
+
+
+void print_break() {
+	print("");
+	print("");
+}
