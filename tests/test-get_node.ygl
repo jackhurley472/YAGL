@@ -1,0 +1,13 @@
+Node n("test");
+Node n2("test2");
+Graph g;
+g: + n + n2;
+
+int num = g.num_nodes;
+int pos = 0;
+while (pos < num) {
+	print(g.node[pos]);
+	pos = pos + 1;
+}
+
+

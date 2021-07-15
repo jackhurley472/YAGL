@@ -1,0 +1,8 @@
+bool b;
+
+bool foo(bool bar) {
+  printBool(bar);
+}
+
+printBool(false);
+foo(true);

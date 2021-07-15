@@ -1,0 +1,9 @@
+Graph g;
+Node n("hi");
+Node n2("hi2");
+
+g: + n + n2 [5<->8] n;
+g: n2 [10<->12] n;
+
+int weight = g.weight[n,n2];
+print(weight);

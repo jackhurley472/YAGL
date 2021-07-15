@@ -1,0 +1,10 @@
+bool foo() {
+   bool[10] bar;
+   bar[6] = true; 
+   return bar[6];
+}
+
+bool temp;
+temp = foo();
+printBool(temp);
+

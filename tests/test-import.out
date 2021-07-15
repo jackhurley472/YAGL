@@ -1,0 +1,20 @@
+Adam
+Shvetank
+Jack
+============== Graph Print ===============
+	Stats: 	4	4	4
+
+Nodes:
+Node (0) : Adam --- Node (1) : Jamie --- Node (2) : Jack
+Node (3) : Shvetank
+
+Edges:
+[(0) : Adam] ---(1)---> [(1) : Jamie]
+[(0) : Adam] ---(1)---> [(3) : Shvetank]
+[(1) : Jamie] ---(1)---> [(0) : Adam]
+[(1) : Jamie] ---(1)---> [(2) : Jack]
+[(2) : Jack] ---(1)---> [(1) : Jamie]
+[(2) : Jack] ---(1)---> [(3) : Shvetank]
+[(3) : Shvetank] ---(1)---> [(2) : Jack]
+[(3) : Shvetank] ---(1)---> [(0) : Adam]
+============ End Graph Print =============

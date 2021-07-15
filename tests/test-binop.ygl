@@ -1,0 +1,2 @@
+printInt(5+10);
+printInt(7+15);

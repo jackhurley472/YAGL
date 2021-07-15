@@ -1,0 +1,13 @@
+Graph demo;
+
+Node portland("Portland");
+Node pittsburgh("Pittsburgh");
+Node nyc("New York City");
+Node nj("New Jersey");
+
+demo: + portland + pittsburgh ->2566 portland ->2566 pittsburgh
+      + nyc [800<->800] pittsburgh, portland [2900<->2900] nyc,
+      + nj <-13 nyc <-13 nj [2899<->2899] portland,
+      nj [790<->790] pittsburgh;
+
+print(demo);

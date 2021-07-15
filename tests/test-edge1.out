@@ -1,0 +1,9 @@
+============== Graph Print ===============
+	Stats: 	2	2	1
+
+Nodes:
+Node (0) : origin --- Node (1) : destination
+
+Edges:
+[(0) : origin] ---(5)---> [(1) : destination]
+============ End Graph Print =============

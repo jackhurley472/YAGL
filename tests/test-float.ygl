@@ -1,0 +1,16 @@
+float a;
+
+int printHello(float a) {
+  printString("Hello World!");
+  printFloat(a);
+}
+
+int printHello2() {
+  float a;
+
+  printFloat(7.1);
+  printHello(6.2);
+}
+
+
+printHello2();

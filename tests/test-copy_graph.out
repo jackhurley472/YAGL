@@ -1,0 +1,24 @@
+original:
+============== Graph Print ===============
+	Stats: 	4	3	2
+
+Nodes:
+Node (0) : Hi there --- Node (1) : hey --- Node (2) : Bye
+
+
+Edges:
+[(2) : Bye] ---(1)---> [(1) : hey]
+[(0) : Hi there] ---(5)---> [(1) : hey]
+============ End Graph Print =============
+Copied:
+============== Graph Print ===============
+	Stats: 	4	3	2
+
+Nodes:
+Node (0) : Hi there --- Node (1) : hey --- Node (2) : Bye
+
+
+Edges:
+[(0) : Hi there] ---(5)---> [(1) : hey]
+[(2) : Bye] ---(1)---> [(1) : hey]
+============ End Graph Print =============

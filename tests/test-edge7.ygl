@@ -1,0 +1,18 @@
+Graph g;
+
+Node n("h");
+Node n2("e");
+Node n3("l");
+
+int b = 6;
+
+/* Must use [ ] for bidirectional with
+   separate weights in recursion*/
+g: + n + n2 + n3 [7<->5] n2;
+
+/* [ ] optional for bidir with separate 
+   weights with no recursion*/
+g: n2 6<->9 n;
+g: n |b+10|<->b n3;
+
+printGraph(g);

@@ -1,0 +1,37 @@
+============== Graph Print ===============
+	Stats: 	2	2	1
+
+Nodes:
+Node (2) : Michael3 --- Node (3) : Michael4
+
+Edges:
+[(2) : Michael3] ---(1)---> [(3) : Michael4]
+============ End Graph Print =============
+============== Graph Print ===============
+	Stats: 	2	2	1
+
+Nodes:
+Node (4) : Michael5 --- Node (5) : Michael6
+
+Edges:
+[(4) : Michael5] ---(1)---> [(5) : Michael6]
+============ End Graph Print =============
+Nodes don't exist in given graph.
+============== Graph Print ===============
+	Stats: 	2	2	1
+
+Nodes:
+Node (6) : Finished --- Node (1) : Michael2
+
+Edges:
+[(1) : Michael2] ---(5)---> [(6) : Finished]
+============ End Graph Print =============
+============== Graph Print ===============
+	Stats: 	2	2	1
+
+Nodes:
+Node (0) : Michael1 --- Node (1) : Michael2
+
+Edges:
+[(0) : Michael1] ---(1)---> [(1) : Michael2]
+============ End Graph Print =============

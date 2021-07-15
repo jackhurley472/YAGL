@@ -1,0 +1,8 @@
+Node n1("n1");
+printInt(n1.curr_dist);
+while (n1.curr_dist < 3) {
+	n1.curr_dist = n1.curr_dist + 1;
+	printInt(n1.curr_dist);
+}
+	
+

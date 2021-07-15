@@ -1,0 +1,10 @@
+============== Graph Print ===============
+	Stats: 	4	4	0
+
+Nodes:
+Node (0) : Adam --- Node (1) : James --- Node (2) : Tank
+Node (3) : Jack
+
+Edges:
+There aren't any edges in this graph.
+============ End Graph Print =============

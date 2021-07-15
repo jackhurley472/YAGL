@@ -1,0 +1,2 @@
+printString("Hello World!");
+printInt(0);

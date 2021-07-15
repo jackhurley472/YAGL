@@ -1,0 +1,24 @@
+
+Graph G;
+
+Node n("Adam");
+Node n2("James");
+Node n3("Tank");
+Node n4("Jack");
+Node n5("Jack2");
+Node n6("Jack3");
+
+G + n;
+G + n2;
+G + n3;
+G + n4;
+G + n5;
+G + n6;
+
+int b = 3;
+
+G: n -> n2 ->2 n3 ->b n4 ->|b + 1| n5 ->|5| n6;
+
+printGraph(G);
+
+

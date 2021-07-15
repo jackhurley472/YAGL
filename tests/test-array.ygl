@@ -1,0 +1,15 @@
+int bar;
+bar = 9;
+
+int[10] foo;
+foo[0] = 0;
+foo[2+3] = 123;
+foo[bar] = 456;
+
+printInt(foo[3-3]);
+printInt(foo[5]);
+printInt(foo[bar]);
+
+int temp;
+temp = foo[0];
+printInt(temp);

@@ -1,0 +1,42 @@
+/* Every single variable is named foo */
+
+Graph foo;
+{
+   Node bar("Michael1");
+   foo + bar;
+   Node bar2("Michael2");
+   foo + bar2;
+   foo: bar ->1 bar2;
+   int i = 0;
+   while (i < 3) {
+	   if (i == 2) { 
+		   Graph foo;
+		   Node bar("Finished");
+		   foo + bar;
+		   foo: bar2 -> bar;
+		   foo + bar2;
+		   foo: bar2 ->5 bar;
+		   printGraph(foo);
+	   } else {
+		   if (i == 1) {
+			   Graph foo;
+			   Node bar("Michael5");
+			   foo + bar;
+			   Node bar2("Michael6");
+		   	   foo + bar2;
+		   	   foo: bar -> bar2;
+		   	   printGraph(foo);
+		   } else {
+			   Graph foo;
+			   Node bar("Michael3");
+			   foo + bar;
+			   Node bar2("Michael4");
+		   	   foo + bar2;
+		   	   foo: bar -> bar2;
+		   	   printGraph(foo);
+		   }
+	   }
+	   i = i + 1;
+   }
+}
+printGraph(foo);

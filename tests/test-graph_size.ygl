@@ -1,0 +1,7 @@
+Graph g;
+Node n("hi");
+Node n2("hi");
+Node n3("hi");
+g: + n + n2 + n3;
+int x = g.num_nodes;
+printInt(x);

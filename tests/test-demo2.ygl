@@ -1,0 +1,23 @@
+started();
+void finished() {
+	printString("Executed" + " Completely");
+	printString("*******************");
+}
+String[3] foo;
+String[3] t;
+t[0] = "Make";
+t[1] = "Some";
+t[2] = "Noise";
+int bar = 0;
+String x = "";
+while(bar < 3) {
+	foo[bar] = t[bar];
+	x = x + " " + foo[bar];
+	printString(x);
+	bar = bar + 1;
+}
+finished();
+void started() {
+	printString("******************");
+	printString("Loading" + " ...");
+}

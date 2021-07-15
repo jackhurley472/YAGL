@@ -1,0 +1,21 @@
+============== Graph Print ===============
+	Stats: 	4	4	4
+
+Nodes:
+Node (0) : Portland --- Node (1) : Pittsburgh --- Node (2) : New York City
+Node (3) : New Jersey
+
+Edges:
+[(1) : Pittsburgh] ---(2566)---> [(0) : Portland]
+[(1) : Pittsburgh] ---(800)---> [(2) : New York City]
+[(1) : Pittsburgh] ---(790)---> [(3) : New Jersey]
+[(0) : Portland] ---(2566)---> [(1) : Pittsburgh]
+[(0) : Portland] ---(2900)---> [(2) : New York City]
+[(0) : Portland] ---(2899)---> [(3) : New Jersey]
+[(2) : New York City] ---(800)---> [(1) : Pittsburgh]
+[(2) : New York City] ---(2900)---> [(0) : Portland]
+[(2) : New York City] ---(13)---> [(3) : New Jersey]
+[(3) : New Jersey] ---(13)---> [(2) : New York City]
+[(3) : New Jersey] ---(2899)---> [(0) : Portland]
+[(3) : New Jersey] ---(790)---> [(1) : Pittsburgh]
+============ End Graph Print =============

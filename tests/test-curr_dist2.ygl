@@ -1,0 +1,4 @@
+Node n("n");
+n.curr_dist = 5;
+n.curr_dist = n.curr_dist + 5;
+printInt(n.curr_dist);

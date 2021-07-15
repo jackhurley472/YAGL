@@ -1,0 +1,15 @@
+============== Graph Print ===============
+	Stats: 	8	6	5
+
+Nodes:
+Node (0) : Adam --- Node (1) : James --- Node (2) : Tank
+Node (3) : Jack --- Node (4) : Jack2 --- Node (5) : Jack3
+
+
+Edges:
+[(0) : Adam] ---(1)---> [(1) : James]
+[(1) : James] ---(2)---> [(2) : Tank]
+[(2) : Tank] ---(3)---> [(3) : Jack]
+[(3) : Jack] ---(4)---> [(4) : Jack2]
+[(4) : Jack2] ---(5)---> [(5) : Jack3]
+============ End Graph Print =============

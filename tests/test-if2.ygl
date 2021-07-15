@@ -1,0 +1,4 @@
+if (true)
+	printBool(true);
+else
+	printBool(false);

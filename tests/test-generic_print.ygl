@@ -1,0 +1,12 @@
+Node n("hi");
+print(n);
+int x = 5;
+print(x);
+char s = 's';
+print(s);
+print('s');
+Graph g;
+g: + n;
+print(g);
+print("Hi!!!");
+print(true);

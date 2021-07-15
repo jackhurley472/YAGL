@@ -1,0 +1,4 @@
+char a = 'c' ;
+char b = '\n' ;
+printChar(a);
+printChar(b);

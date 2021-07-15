@@ -1,0 +1,24 @@
+============== Graph Print ===============
+	Stats: 	8	4	5
+
+Nodes:
+Node (0) : James --- Node (1) : Jack --- Node (2) : Adam
+Node (3) : Tank
+
+Edges:
+[(1) : Jack] ---(1)---> [(0) : James]
+[(2) : Adam] ---(2)---> [(0) : James]
+[(2) : Adam] ---(5)---> [(1) : Jack]
+[(0) : James] ---(3)---> [(1) : Jack]
+[(3) : Tank] ---(4)---> [(2) : Adam]
+============ End Graph Print =============
+============== Graph Print ===============
+	Stats: 	4	4	0
+
+Nodes:
+Node (0) : James --- Node (1) : Jack --- Node (3) : Tank
+Node (2) : Adam
+
+Edges:
+There aren't any edges in this graph.
+============ End Graph Print =============

@@ -1,0 +1,10 @@
+Graph G;
+Node n("Adam");
+Node n2("James");
+Node n3("Tank");
+Node n4("Jack");
+G + n;
+G + n2;
+G + n3;
+G + n4;
+printGraph(G);

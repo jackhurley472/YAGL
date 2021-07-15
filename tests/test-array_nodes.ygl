@@ -1,0 +1,6 @@
+Graph g;
+Node n("hi");
+g: +n;
+Node[5] x;
+x[0] = n;
+print(x[0]);

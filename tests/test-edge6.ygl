@@ -1,0 +1,27 @@
+Graph g_all;
+Graph g_add;
+
+Node james("James");
+Node jack("Jack");
+Node adam("Adam");
+Node tank("Tank");
+Node random_person("Rando");
+
+g_all: + james + jack -> james + adam ->2 james ->3 jack + tank ->4 adam ->5 jack 
+       + random_person ->100 tank ->101 random_person - random_person;
+
+printGraph(g_all);
+/* Expectation before running:
+	Nodes in graph: james (James), jack (Jack), adam (Adam), tank (Tank)
+	Edges: Jack to James, Adam to James, James to Jack, Tank to Adam,
+	       Adam to Jack.
+*/
+
+g_add + james;
+g_add + jack;
+g_add: + tank + adam;
+printGraph(g_add);
+/* Expectation before running:
+	Nodes in graph: james (James), jack (Jack), adam (Adam), tank (Tank)
+	No edges.
+*/

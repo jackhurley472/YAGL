@@ -1,0 +1,10 @@
+String[3] strs;
+strs[0] = "Hi,";
+strs[1] = "my name is";
+strs[2] = "Bob";
+int temp;
+temp = 2;
+printString(strs[0]);
+printString(strs[1]);
+printString(strs[temp]);
+

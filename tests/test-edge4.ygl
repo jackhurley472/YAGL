@@ -1,0 +1,25 @@
+Graph G;
+
+Node n("Adam");
+Node n2("James");
+Node n3("Tank");
+Node n4("Jack");
+
+G + n;
+G + n2;
+G + n3;
+G + n4;
+
+int b = 3;
+
+/* All different types of edges */
+
+G: n -> n2; 		/* Default 1 */
+G: n ->2 n3; 		/* Simply just a literal */
+G: n2 ->b n3; 		/* Simply just a variable */
+G: n3 ->|b + 1| n2;	/* Expression */
+G: n3 ->|5| n4;		/* Optional | */
+
+printGraph(G);
+
+
