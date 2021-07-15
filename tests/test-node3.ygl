@@ -1,0 +1,6 @@
+String init = "This is x";
+Node x(init);
+printNode(x);
+String updt = "not!";
+x = updt;
+printNode(x);

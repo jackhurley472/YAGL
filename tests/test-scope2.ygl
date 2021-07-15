@@ -1,0 +1,23 @@
+
+int a;
+a= 5;
+int c;
+c= 3;
+if (true) {
+
+   int b = 7;
+   String c = "abc";
+
+   {
+      int d; 
+      d = 25;
+      printInt(d);
+   }
+
+   printInt(b);
+   printInt(a);
+   printString(c);
+}
+
+printInt(a);
+printInt(c);

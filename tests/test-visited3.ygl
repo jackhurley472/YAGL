@@ -1,0 +1,10 @@
+Node n1("n1");
+Node n2("n2");
+Node n3("n3");
+
+n1.visited = true;
+n3.visited = true;
+
+printBool(n1.visited);
+printBool(n2.visited);
+printBool(n3.visited);

@@ -1,0 +1,3 @@
+Node n;
+n = "hi";
+printNode(n);

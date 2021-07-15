@@ -1,0 +1,5 @@
+Node n("unvisited");
+n.visited = true;
+if (n.visited) {
+	printBool(true);
+}

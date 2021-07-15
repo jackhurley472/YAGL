@@ -1,0 +1,14 @@
+float a;
+
+int printHello() {
+  
+  String hello;
+
+  hello = "Hello World";
+
+  printString(hello);
+  printInt(hello.length);
+}
+
+
+printHello();

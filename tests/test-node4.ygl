@@ -1,0 +1,6 @@
+Node y("test");
+Node x;
+x = y;
+printNode(x);
+x = "hi";
+printNode(y);
